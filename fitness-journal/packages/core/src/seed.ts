@@ -1,0 +1,40 @@
+import type { Exercise, ExerciseType } from './types';
+
+const t = (
+  id: string, name: string, type: ExerciseType, muscleTags: string[], equipment: string[] = ['bodyweight'],
+): Exercise => ({ id, name, type, muscleTags, equipment });
+
+export const SEED_EXERCISES: Exercise[] = [
+  t('bench-press', 'Bench press', 'weight_reps', ['chest', 'triceps'], ['barbell']),
+  t('overhead-press', 'Overhead press', 'weight_reps', ['shoulders'], ['barbell']),
+  t('incline-db-press', 'Incline dumbbell press', 'weight_reps', ['chest'], ['dumbbell']),
+  t('dips', 'Dips', 'reps', ['chest', 'triceps']),
+  t('push-up', 'Push-up', 'reps', ['chest']),
+  t('pull-up', 'Pull-up', 'reps', ['back', 'biceps']),
+  t('chin-up', 'Chin-up', 'reps', ['back', 'biceps']),
+  t('barbell-row', 'Barbell row', 'weight_reps', ['back'], ['barbell']),
+  t('ring-row', 'Ring row', 'reps', ['back'], ['rings']),
+  t('back-squat', 'Back squat', 'weight_reps', ['legs'], ['barbell']),
+  t('front-squat', 'Front squat', 'weight_reps', ['legs'], ['barbell']),
+  t('deadlift', 'Deadlift', 'weight_reps', ['posterior'], ['barbell']),
+  t('romanian-deadlift', 'Romanian deadlift', 'weight_reps', ['posterior'], ['barbell']),
+  t('walking-lunge', 'Walking lunge', 'reps', ['legs']),
+  t('pistol-squat', 'Pistol squat progression', 'reps', ['legs']),
+  t('hip-thrust', 'Hip thrust', 'weight_reps', ['glutes'], ['barbell']),
+  t('farmer-carry', 'Farmer carry', 'distance', ['grip', 'core'], ['dumbbell']),
+  t('sled-push', 'Sled push', 'distance', ['legs', 'conditioning'], ['sled']),
+  t('hanging-leg-raise', 'Hanging leg raise', 'reps', ['core']),
+  t('plank', 'Plank', 'timed', ['core']),
+  t('hollow-hold', 'Hollow hold', 'timed', ['core']),
+  t('l-sit', 'L-sit', 'timed', ['core', 'shoulders']),
+  t('handstand-hold', 'Handstand hold', 'timed', ['shoulders']),
+  t('wall-handstand-drill', 'Wall handstand drills', 'skill', ['shoulders']),
+  t('shoulder-cars', 'Shoulder CARs', 'timed', ['shoulders', 'mobility']),
+  t('hip-90-90', 'Hip 90/90', 'reps', ['hips', 'mobility']),
+  t('thoracic-rotation', 'Thoracic rotation', 'reps', ['mobility']),
+  t('deep-squat-hold', 'Deep squat hold', 'timed', ['hips', 'mobility']),
+  t('couch-stretch', 'Couch stretch', 'timed', ['hips', 'mobility']),
+  t('worlds-greatest-stretch', "World's greatest stretch", 'reps', ['mobility']),
+  t('bear-crawl', 'Bear crawl', 'distance', ['full-body']),
+  t('turkish-get-up', 'Turkish get-up', 'weight_reps', ['full-body'], ['kettlebell']),
+];

@@ -1,0 +1,12 @@
+{
+  "name": "fitness-journal",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "dev": "npm run dev -w @fit/web",
+    "build": "npm run build -w @fit/web",
+    "test": "npm run test -w @fit/core",
+    "typecheck": "npm run typecheck -w @fit/core && npm run typecheck -w @fit/web"
+  }
+}
