@@ -10,37 +10,37 @@ export const LEADERS: LeaderQuote[] = [
   {
     name: 'Seneca',
     quote: 'We suffer more often in imagination than in reality.',
-    photo: '/leaders/seneca.jpg',
+    photo: '/leaders/senecaedwf.jpg',
   },
   {
     name: 'Epictetus',
     quote: 'First say to yourself what you would be; and then do what you have to do.',
-    photo: '/leaders/epictetus.jpg',
+    photo: '/leaders/epictetusedwf.jpg',
   },
   {
     name: 'Napoleon Bonaparte',
     quote: 'Victory belongs to the most persevering.',
-    photo: '/leaders/napoleon.jpg',
+    photo: '/leaders/napoleonctedwf.jpg',
   },
   {
     name: 'Abraham Lincoln',
     quote: 'I am a slow walker, but I never walk back.',
-    photo: '/leaders/lincoln.jpg',
+    photo: '/leaders/lincolnedwf.jpg',
   },
   {
     name: 'Sun Tzu',
     quote: 'Victorious warriors win first and then go to war.',
-    photo: '/leaders/suntzu.jpg',
+    photo: '/leaders/suntzuedwf.jpg',
   },
   {
     name: 'Marcus Aurelius',
     quote: 'The impediment to action advances action. What stands in the way becomes the way.',
-    photo: '/leaders/marcus.jpg',
+    photo: '/leaders/marcusedwf.jpg',
   },
   {
     name: 'Theodore Roosevelt',
     quote: 'Do what you can, with what you have, where you are.',
-    photo: '/leaders/roosevelt.jpg',
+    photo: '/leaders/rooseveltedwfs.jpg',
   },
   
 ];

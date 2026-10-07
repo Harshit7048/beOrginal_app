@@ -36,9 +36,7 @@ export default function App() {
         {screen === 'progress' && <Placeholder title="Progress" note="Recent bests and the dot calendar come in phase 2." />}
       </main>
       <nav
-        className={`relative z-10 flex justify-around border-t py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] ${
-          home ? 'border-white/10 bg-black/40 backdrop-blur-md' : 'border-ln bg-bg'
-        }`}
+        className={`relative z-10 flex justify-around py-2 'border-white/10 bg-black/40 backdrop-blur-md pb-[max(0.5rem,env(safe-area-inset-bottom))] `}
       >
         {TABS.map((t) => (
           <button
@@ -46,8 +44,8 @@ export default function App() {
             onClick={() => go(t.id)}
             className={`px-3 py-1 text-xs ${
               activeTab === t.id
-                ? home ? 'font-semibold text-white' : 'font-semibold text-tx'
-                : home ? 'text-white/50' : 'text-mu'
+                ?  'font-semibold text-white underline' : 'text-white text-tx'
+                  
             }`}
           >
             {t.label}
